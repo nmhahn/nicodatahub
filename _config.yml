@@ -13,9 +13,10 @@ social:
 disqus:
   shortname: nmhahn
 
-theme: jekyll-theme-minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 exclude:
   - .sass-cache/
