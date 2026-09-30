@@ -1,0 +1,31 @@
+title: NicoDataHub
+description: "Sr. Data Scientist | Statistician | M.S. Computer Science (Data Quality)"
+author:
+    name: "Nicolas Mathias Hahn"
+url: "https://nicodatahub.com"
+permalink: "/:year/:month/:day/:title/"
+url: "https://nicodatahub.com"
+
+social:
+    github: nmhahn
+    linkedin: nmahahn
+
+disqus:
+  shortname: nmhahn
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
