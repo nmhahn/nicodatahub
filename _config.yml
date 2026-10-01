@@ -1,23 +1,45 @@
+# Configurações Principais
 title: NicoDataHub
-description: "Sr. Data Scientist | Statistician | M.S. Computer Science (Data Quality)"
-author:
-    name: "Nicolas Mathias Hahn"
+description: ""
 url: "https://nicodatahub.com"
+baseurl: "" # Mantém vazio para domínio próprio
 permalink: "/:year/:month/:day/:title/"
-url: "https://nicodatahub.com"
 
-social:
-    github: nmhahn
-    linkedin: nmahahn
+# Tema Remoto (Minima v3)
+remote_theme: jekyll/minima@d4d779a
 
+# Configurações do Minima v3
+minima:
+  # Skins disponíveis no Minima v3: auto, classic, dark, solarized, solarized-light, solarized-dark
+  skin: classic
+  date_format: "%Y-%m-%d"
+  
+  # Links de Redes Sociais no Rodapé (Nativo do Minima v3 via Font Awesome)
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/nmhahn"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/nmhahn"
+
+# Integrações Externas
 disqus:
   shortname: nmhahn
 
-remote_theme: jekyll/minima
+# Plugins do Jekyll
 plugins:
-  - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap # Adicionado para gerar sitemap.xml automaticamente para SEO
 
+# Otimização do Compilador Sass
+sass:
+  style: compressed
+  quiet_deps: true
+
+# Arquivos/Pastas a Ignorar no Build
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -25,8 +47,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
   - README.md
+  - LICENSE
