@@ -27,6 +27,9 @@ minima:
 disqus:
   shortname: nmhahn
 
+# Google Analytics
+google_analytics: G-27Z6M2HKPQ
+
 # Plugins do Jekyll
 plugins:
   - jekyll-remote-theme
